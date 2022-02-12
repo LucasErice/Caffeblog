@@ -1,0 +1,24 @@
+.curso{
+    padding: 3rem;
+    border-bottom: 1px solid $gris;
+    &:last-of-type{
+        border: none;
+    }
+
+    .curso__label{
+        font-family: $fuenteHeading;
+        font-weight: bold;
+        font-size: 2rem;
+
+        .curso__info{
+            font-weight: normal;
+            font-size: 2rem;
+        }
+    }
+
+    @media(min-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}

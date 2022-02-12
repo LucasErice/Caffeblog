@@ -1,0 +1,14 @@
+.sobre-nosotros{
+    padding: 3rem;
+    margin: auto 0;
+
+    @media(min-width: 950px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .sobre-nosotros__imagen{
+        margin: auto 0;
+    }
+}

@@ -1,0 +1,76 @@
+@import "generales";
+@import "header";
+@import "main";
+@import "footer";
+@import "nosotros";
+@import "cursos";
+
+.blog-entrada{
+    padding: 0 3rem;
+}
+
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 30rem;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.boton{
+    display: block;
+    font-family: $fuenteHeading;
+    color: $blanco;
+    text-align: center;
+    padding: .7rem 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    &:hover{
+        cursor: pointer;
+    }
+
+    @media(min-width: 768px){
+        display: inline-block;
+    }
+}
+
+.boton--primario{
+    background-color: $negro;
+}
+
+.formulario{
+    width: 75%;
+    margin: -5rem auto 0 auto;
+    background-color: $blanco;
+    padding: 2rem;
+
+    .campo{
+        display: flex;
+        margin-bottom: 1rem;
+        gap: 1rem;
+
+        @media(min-width: 678px){
+            .campo__field{
+                width: 3rem;
+            }
+        }
+
+        .campo__label{
+            flex: 0 0 9rem;
+            text-align: right;
+        }
+
+        .campo__field{
+            flex: 1;
+            border: 1px solid $gris;
+        }
+
+        .campo__field--textarea{
+            height: 15rem;
+        }
+    }
+}

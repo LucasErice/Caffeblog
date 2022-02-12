@@ -1,0 +1,45 @@
+.footer{
+    background-color: $negro;
+    padding: 3rem 0;
+    margin-top: 4rem;
+    
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width:768px){
+            flex-direction: column;
+        }
+
+        .logo{
+            color: $blanco;
+
+            .logo__nombre{
+                font-weight: 400;
+                
+                .logo__bold{
+                    font-weight: 700;
+                }
+            }
+        }
+        
+        .navegacion{
+            display: flex;
+            gap: 1rem;
+
+            @media(max-width: 480px){
+                flex-direction: column;
+            }
+            .navegacio__enlace{
+                color: $blanco;
+                &:hover{
+                    background-color: $colorPrimario;
+                    padding: .5rem;
+                    transition: 1s;
+                    
+                }
+            }
+        }
+    }
+}
