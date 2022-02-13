@@ -43,34 +43,34 @@
 }
 
 .formulario{
+    background-color: $blanco;
     width: 75%;
     margin: -5rem auto 0 auto;
-    background-color: $blanco;
-    padding: 2rem;
+    padding: 1rem;
 
     .campo{
         display: flex;
         margin-bottom: 1rem;
-        gap: 1rem;
 
-        @media(min-width: 678px){
-            .campo__field{
-                width: 3rem;
-            }
+        @media(max-width: 602px){
+            flex-direction: column;
         }
+         
 
         .campo__label{
-            flex: 0 0 9rem;
-            text-align: right;
+            flex: 0 0 7rem;
+            @media(max-width: 602px){
+                flex: 0 0 3rem;
+                text-align: center;
+            }
         }
 
         .campo__field{
             flex: 1;
-            border: 1px solid $gris;
         }
 
         .campo__field--textarea{
-            height: 15rem;
+            height: 20rem;
         }
     }
 }
